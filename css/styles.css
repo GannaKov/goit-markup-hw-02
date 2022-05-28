@@ -9,13 +9,7 @@ body {
 .list {
   list-style: none;
 }
-.page-header {
-}
-.header-nav {
-}
 
-.logo {
-}
 .header-list {
   color: rgba(33, 33, 33, 1);
   font-size: 14px;
@@ -47,9 +41,41 @@ body {
   color: rgba(33, 150, 243, 1);
 }
 
-.contakts.link {
+/* ------- HERO ------*/
+.hero-title {
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(47, 48, 58, 1);
+  font-family: "Roboto";
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
-.email {
+
+.btn {
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(33, 150, 243, 1);
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
 }
-.tel {
+
+/* ----- Блок Особенности -----*/
+.qualities-title {
+}
+.qualities-list {
+}
+.list {
+}
+.qualities-sec-title {
+}
+.qualities-text {
 }
