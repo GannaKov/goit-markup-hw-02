@@ -1,4 +1,15 @@
+:root {
+  --link-hover: rgba(33, 150, 243, 1);
+  --btn-fokus-text: rgba(255, 255, 255, 1);
+  --logo-accent: rgba(33, 150, 243, 1);
+  --hero-footer-color: rgba(47, 48, 58, 1);
+  --sec-title-color: rgba(33, 33, 33, 1);
+  --paragraph-text: rgba(117, 117, 117, 1);
+  --btn-background: rgba(33, 150, 243, 1);
+}
 body {
+  background-color: rgba(255, 255, 255, 1);
+
   font-family: "Roboto", "Verdana", "Tahoma", sans-serif;
 }
 
@@ -8,6 +19,17 @@ body {
 }
 .list {
   list-style: none;
+}
+.logo {
+  font-family: "Raleway", "Verdana", "Tahoma", sans-serif;
+  color: var(--logo-accent);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+.logo-accent {
+  color: rgba(33, 33, 33, 1);
 }
 
 .header-list {
@@ -20,9 +42,13 @@ body {
 .header-list .link:visited {
   color: rgba(33, 33, 33, 1);
 }
+
+.header-list .link.current {
+  color: var(--link-hover);
+}
 .header-list .link:focus,
 .header-list .link:hover {
-  color: rgba(33, 150, 243, 1);
+  color: var(--link-hover);
 }
 
 .header-contacts .link {
@@ -33,18 +59,23 @@ body {
   letter-spacing: 0.02em;
 }
 
+/* ----в эффективности этого visited я сомневаюсь, 
+но тогда есть вопросы----- */
+
 .header-contacts .link:visited {
   color: rgba(117, 117, 117, 1);
 }
+
 .header-contacts .link:focus,
 .header-contacts .link:hover {
-  color: rgba(33, 150, 243, 1);
+  color: var(--link-hover);
 }
 
 /* ------- HERO ------*/
 .hero-title {
   color: rgba(255, 255, 255, 1);
-  background-color: rgba(47, 48, 58, 1);
+
+  background-color: var(--hero-footer-color);
 
   font-weight: 900;
   font-size: 44px;
@@ -54,9 +85,10 @@ body {
   text-transform: uppercase;
 }
 
-.btn {
+.hero-btn {
   color: rgba(255, 255, 255, 1);
-  background-color: rgba(33, 150, 243, 1);
+  background-color: var(--btn-background);
+
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -66,9 +98,18 @@ body {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
+  cursor: pointer;
+}
+.hero-btn:hover,
+.hero-btn:focus {
+  color: var(--btn-fokus-text);
+
+  background-color: rgba(24, 140, 232, 1);
 }
 
 /* ----- Блок Особенности -----*/
+/*скрывается заголовок*/
+
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -81,40 +122,143 @@ body {
   clip-path: inset(50%);
   margin: -1px;
 }
-
+/*--------------------------*/
 .qualities-sec-title {
-  color: rgba(33, 33, 33, 1);
+  color: var(--sec-title-color);
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 .qualities-text {
-  color: rgba(117, 117, 117, 1);
-
+  color: var(--paragraph-text);
   font-size: 14px;
   line-height: 1.71;
-
   letter-spacing: 0.03em;
 }
 /* --- Блок Чем мы занимаемся--- */
+
 .dealing-title {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
 }
-/* ------- добавить про фото? ----*/
+
 /* -------Блок Наша команда-------*/
 .team {
+  background-color: rgba(245, 244, 250, 1);
 }
+
 .team-title {
+  color: rgba(33, 33, 33, 1);
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
-.team-list {
+
+.team-sec-title {
+  color: var(--sec-title-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  /* identical to box height */
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.team-text {
+  color: var(--paragraph-text);
+  font-size: 16px;
+  line-height: 1.19;
+  /* identical to box height */
+
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+/* ------- Footer -------- */
+.page-footer {
+  background-color: var(--hero-footer-color);
+}
+
+.footer-logo-accent {
+  color: rgba(255, 255, 255, 1);
+}
+
+.footer-adress {
+  color: rgba(255, 255, 255, 1);
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.footer-email,
+.footer-tel {
+  color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.footer-adress:hover,
+.footer-adress:focus,
+.footer-email:hover,
+.footer-email:focus,
+.footer-tel:hover,
+.footer-tel:focus {
+  color: var(--link-hover);
+}
+
+/* ----- Portfolio ------ */
+.examples {
+  background-color: rgba(238, 238, 238, 1);
+}
+.exaples-title {
+}
+.exaples-filter {
+}
+.exaples-filter-btn {
+  color: rgba(33, 33, 33, 1);
+  background-color: rgba(245, 244, 250, 1);
+
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+
+  text-align: center;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+}
+.exaples-filter-btn:hover,
+.exaples-filter-btn:focus {
+  color: var(--btn-fokus-text);
+
+  background-color: var(--btn-background);
+}
+.exaples-list {
 }
 .list {
 }
-.team-sec-title {
+.exaples-list-item {
+  background-color: rgba(238, 238, 238, 1);
 }
-.team-text {
+.exaples-link {
+}
+.link {
+}
+.examples-sec-title {
+  color: var(--sec-title-color);
+
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.examples-text {
+  color: var(--paragraph-text);
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
 }
