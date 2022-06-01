@@ -8,8 +8,8 @@
   --btn-background: rgba(33, 150, 243, 1);
 }
 body {
-  background-color: rgba(255, 255, 255, 1);
-
+  background-color: #ffffff;
+  font-size: 14px;
   font-family: "Roboto", "Verdana", "Tahoma", sans-serif;
 }
 
@@ -34,7 +34,7 @@ body {
 
 .header-list {
   color: rgba(33, 33, 33, 1);
-  font-size: 14px;
+  font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
@@ -47,14 +47,15 @@ body {
   color: var(--link-hover);
 }
 .header-list .link:focus,
-.header-list .link:hover {
+.header-list .link:hover,
+.header-contacts .link:focus,
+.header-contacts .link:hover {
   color: var(--link-hover);
 }
 
 .header-contacts .link {
   color: rgba(117, 117, 117, 1);
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
@@ -66,17 +67,11 @@ body {
   color: rgba(117, 117, 117, 1);
 }
 
-.header-contacts .link:focus,
-.header-contacts .link:hover {
-  color: var(--link-hover);
-}
-
 /* ------- HERO ------*/
-.hero-title {
-  color: rgba(255, 255, 255, 1);
-
+.hero {
   background-color: var(--hero-footer-color);
-
+}
+.hero-title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -125,14 +120,12 @@ body {
 /*--------------------------*/
 .qualities-sec-title {
   color: var(--sec-title-color);
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 .qualities-text {
   color: var(--paragraph-text);
-  font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
@@ -148,6 +141,9 @@ body {
 /* -------Блок Наша команда-------*/
 .team {
   background-color: rgba(245, 244, 250, 1);
+}
+.team-item {
+  background-color: rgba(255, 255, 255, 1);
 }
 
 .team-title {
@@ -188,7 +184,6 @@ body {
 .footer-adress {
   color: rgba(255, 255, 255, 1);
   font-style: normal;
-  font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
@@ -197,7 +192,6 @@ body {
 .footer-tel {
   color: rgba(255, 255, 255, 0.6);
   font-style: normal;
-  font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
@@ -212,12 +206,12 @@ body {
 
 /* ----- Portfolio ------ */
 .examples {
-  background-color: rgba(238, 238, 238, 1);
 }
 .exaples-title {
 }
 .exaples-filter {
 }
+
 .exaples-filter-btn {
   color: rgba(33, 33, 33, 1);
   background-color: rgba(245, 244, 250, 1);
@@ -231,6 +225,11 @@ body {
   letter-spacing: 0.03em;
   cursor: pointer;
 }
+.filter-first-btn {
+  color: var(--btn-fokus-text);
+
+  background-color: var(--btn-background);
+}
 .exaples-filter-btn:hover,
 .exaples-filter-btn:focus {
   color: var(--btn-fokus-text);
@@ -242,7 +241,6 @@ body {
 .list {
 }
 .exaples-list-item {
-  background-color: rgba(238, 238, 238, 1);
 }
 .exaples-link {
 }
